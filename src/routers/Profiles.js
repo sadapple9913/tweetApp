@@ -101,7 +101,7 @@ console.log("photoURL ", attachment )
       {attachment && ( //값이 있으면 true 다, 0 null 공백문자 undefind = false
         <div>
           <img src={attachment} width="50" height="50" alt='' />
-          <button onClick={onClearAttachment}>remove</button>
+          <button onClick={onClearAttachment}>remove~~</button>
 
         </div>
         
