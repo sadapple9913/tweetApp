@@ -82,7 +82,7 @@ function TweetInsert({userObj}) {
 
 
    <label htmlfor="attach-file" className='InsertInput__label'>
-    <span>Add photos123123123</span>
+    <span>Add photos</span>
     <FontAwesomeIcon icon="fa-soild fa-plus" />
    </label>
    <input type='file' accept='image/*' onChange={onFileChange} id='attach-file' style={{opacity:0}} />

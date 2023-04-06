@@ -31,10 +31,10 @@ function Auth() {
 
       <div className="authBtns">
         <button onClick={onSocialClick} name="Google" className="authBtn">
-          Coutinue wiht Google <FontAwesomeIcon icon="fa-brands fa-google" />
+          Coutinue wiht Google. <FontAwesomeIcon icon="fa-brands fa-google" />
         </button>
         <button onClick={onSocialClick} name="GitHub" className="authBtn">
-          Coutinue wiht GitHub <FontAwesomeIcon icon="fa-brands fa-github" />
+          Coutinue wiht GitHub. <FontAwesomeIcon icon="fa-brands fa-github" />
         </button>
       </div>
     </div>
