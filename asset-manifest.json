@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tweetApp/static/css/main.ef8c84c5.css",
+    "main.js": "/tweetApp/static/js/main.79dd4c6e.js",
+    "index.html": "/tweetApp/index.html",
+    "main.ef8c84c5.css.map": "/tweetApp/static/css/main.ef8c84c5.css.map",
+    "main.79dd4c6e.js.map": "/tweetApp/static/js/main.79dd4c6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef8c84c5.css",
+    "static/js/main.79dd4c6e.js"
+  ]
+}
