@@ -101,10 +101,11 @@ console.log("photoURL ", attachment )
       <input type='file' accept='image/*' onChange={onFileChange}  className="formBtn" style={{opacity:0}} id="attach-file"/>
       </label>
       {attachment && ( //값이 있으면 true 다, 0 null 공백문자 undefind = false
-        <div>
-          <img src={attachment} width="50" height="50" alt='' />
-          <button onClick={onClearAttachment}>remove</button>
-
+        <div className="preview">
+          <img src={attachment} alt='' />
+          <span onClick={onClearAttachment}>
+            <FontAwesomeIcon icon={"fa-solid fa-xmark"} />
+          </span>
         </div>
         
       )}
