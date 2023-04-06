@@ -48,7 +48,6 @@ const Profiles = ({userObj}) => {
 
     }
   
-  
     const onSubmit = async (e) => {
       e.preventDefault();
       try {
@@ -93,11 +92,14 @@ console.log("photoURL ", attachment )
 
   return (
     <div className="container">
+    <img className="profile_img" src={userObj.photoURL} alt='' />
     <form onSubmit={onSubmit} className="profileForm" >
       <input type="text" onChange={onChange} value={newDisplayName} placeholder="Display Name" className="formInput" />
-      {/* <img src="" alt='' /> */}
       <input type="submit" value="Update Profile" className="formBtn" />
-      <input type='file' accept='image/*' onChange={onFileChange}  className="formBtn" style={{opacity:0}}/>
+      <label htmlFor="attach-file" className='selection'>   
+      File Selection
+      <input type='file' accept='image/*' onChange={onFileChange}  className="formBtn" style={{opacity:0}} id="attach-file"/>
+      </label>
       {attachment && ( //값이 있으면 true 다, 0 null 공백문자 undefind = false
         <div>
           <img src={attachment} width="50" height="50" alt='' />

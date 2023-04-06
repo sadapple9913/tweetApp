@@ -81,7 +81,7 @@ function TweetInsert({userObj}) {
     </div>
 
 
-   <label htmlfor="attach-file" className='InsertInput__label'>
+   <label htmlFor="attach-file" className='InsertInput__label'>
     <span>Add photos</span>
     <FontAwesomeIcon icon="fa-soild fa-plus" />
    </label>

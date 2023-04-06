@@ -59,10 +59,13 @@ function Tweet(props) {
       {editing ? (
         <>
         <form onSubmit = {onSubmit} className='container tweetEdit'>
-          <input type='text' onChange={onChange} value={newTweet} required />
+           {attachmentUrl && (
+            <img className='editImg' src={attachmentUrl} alt=''  />
+            )}
+          <input className='editInput' type='text' onChange={onChange} value={newTweet} required />
           <input type='submit' value="Updata Tweet" className='formBtn'/>
           </form > 
-          <button onClick={toggleEditing} className='formBtn cancleBtn'>Cancle</button>
+          <div onClick={toggleEditing} className='formBtn cancleBtn'>Cancle</div>
 
         </>
 
